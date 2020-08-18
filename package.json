@@ -1,0 +1,27 @@
+{
+  "name": "craig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "craig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node craig.js"
+  },
+  "engines": {
+    "node": "11.4.0"
+  },
+  "author": "Jordan",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite-pool": "^0.2.2",
+    "discord-youtube-api": "^0.1.0",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.8.4",
+    "express": "^4.16.4",
+    "http": "^0.0.0",
+    "jsearch": "^1.0.0",
+    "mathjs": "^5.9.0",
+    "node-fetch": "^2.3.0"
+  }
+}
+
