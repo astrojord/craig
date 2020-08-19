@@ -1,12 +1,12 @@
-module.exports = {
-  'name': 'null',
-  'category': 'Constants',
-  'syntax': [
+export const nullDocs = {
+  name: 'null',
+  category: 'Constants',
+  syntax: [
     'null'
   ],
-  'description': 'Value null',
-  'examples': [
+  description: 'Value null',
+  examples: [
     'null'
   ],
-  'seealso': ['true', 'false']
+  seealso: ['true', 'false']
 }

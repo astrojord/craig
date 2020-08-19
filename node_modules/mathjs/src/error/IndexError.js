@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Create a range error with the message:
  *     'Index out of range (index < min)'
@@ -10,7 +8,7 @@
  * @param {number} [max]     Maximum index (excluded)
  * @extends RangeError
  */
-function IndexError (index, min, max) {
+export function IndexError (index, min, max) {
   if (!(this instanceof IndexError)) {
     throw new SyntaxError('Constructor must be called with the new operator')
   }
@@ -39,5 +37,3 @@ IndexError.prototype = new RangeError()
 IndexError.prototype.constructor = RangeError
 IndexError.prototype.name = 'IndexError'
 IndexError.prototype.isIndexError = true
-
-module.exports = IndexError

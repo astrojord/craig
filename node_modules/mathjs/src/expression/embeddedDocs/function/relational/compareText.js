@@ -1,13 +1,13 @@
-module.exports = {
-  'name': 'compareText',
-  'category': 'Relational',
-  'syntax': [
+export const compareTextDocs = {
+  name: 'compareText',
+  category: 'Relational',
+  syntax: [
     'compareText(x, y)'
   ],
-  'description':
+  description:
       'Compare two strings lexically. Comparison is case sensitive. ' +
       'Returns 1 when x > y, -1 when x < y, and 0 when x == y.',
-  'examples': [
+  examples: [
     'compareText("B", "A")',
     'compareText("A", "B")',
     'compareText("A", "A")',
@@ -17,7 +17,7 @@ module.exports = {
     'compareNatural("2", "10")',
     'compareText("B", ["A", "B", "C"])'
   ],
-  'seealso': [
+  seealso: [
     'compare', 'compareNatural'
   ]
 }

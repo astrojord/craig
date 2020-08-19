@@ -1,16 +1,16 @@
-module.exports = {
-  'name': 'setMultiplicity',
-  'category': 'Set',
-  'syntax': [
+export const setMultiplicityDocs = {
+  name: 'setMultiplicity',
+  category: 'Set',
+  syntax: [
     'setMultiplicity(element, set)'
   ],
-  'description':
+  description:
       'Count the multiplicity of an element in a multiset. A multi-dimension array will be converted to a single-dimension array before the operation.',
-  'examples': [
+  examples: [
     'setMultiplicity(1, [1, 2, 2, 4])',
     'setMultiplicity(2, [1, 2, 2, 4])'
   ],
-  'seealso': [
+  seealso: [
     'setDistinct', 'setSize'
   ]
 }

@@ -6,19 +6,11 @@ module.exports = {
 	cooldown: 0,
 	execute(message, args) {
         const Discord = require("discord.js");
-        const Math = require("mathjs");
-        const Enmap = require("enmap");
-        const fetch = require('node-fetch');
         const YouTube = require("discord-youtube-api");
-		const yt = new YouTube("AIzaSyAv9wi-P89N1WORUe05TWa-QGfjbvCXAJc");
-        const s = args.slice(1).join(" ")
-        async function get(s){
-            const v = await yt.searchVideos(s);
-            //console.log(v)
-        message.channel.send(`${v.url} (${v.length})`);
-        }
-        get(s);
-	},
+        const yt = new YouTube("AIzaSyAjvWXAPRxxnO6GlDMs7LLCD-Kmpp-S_0o");
+        const s = args.slice(1).join(" ");
+        yt.searchVideos(s,1).then(result => {
+            message.channel.send(`${result[0].url} (${result[0].duration})`);
+        }).catch(e => {message.channel.send(`error encountered while fetching video :( - ${e}`)});
+    }
 };
-
-

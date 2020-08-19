@@ -1,14 +1,14 @@
-module.exports = {
-  'name': 'acosh',
-  'category': 'Trigonometry',
-  'syntax': [
+export const acoshDocs = {
+  name: 'acosh',
+  category: 'Trigonometry',
+  syntax: [
     'acosh(x)'
   ],
-  'description': 'Calculate the hyperbolic arccos of a value, defined as `acosh(x) = ln(sqrt(x^2 - 1) + x)`.',
-  'examples': [
+  description: 'Calculate the hyperbolic arccos of a value, defined as `acosh(x) = ln(sqrt(x^2 - 1) + x)`.',
+  examples: [
     'acosh(1.5)'
   ],
-  'seealso': [
+  seealso: [
     'cosh',
     'asinh',
     'atanh'

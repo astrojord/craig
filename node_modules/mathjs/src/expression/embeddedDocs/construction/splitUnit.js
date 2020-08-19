@@ -1,15 +1,15 @@
-module.exports = {
-  'name': 'splitUnit',
-  'category': 'Construction',
-  'syntax': [
+export const splitUnitDocs = {
+  name: 'splitUnit',
+  category: 'Construction',
+  syntax: [
     'splitUnit(unit: Unit, parts: Unit[])'
   ],
-  'description':
+  description:
       'Split a unit in an array of units whose sum is equal to the original unit.',
-  'examples': [
+  examples: [
     'splitUnit(1 m, ["feet", "inch"])'
   ],
-  'seealso': [
+  seealso: [
     'unit', 'createUnit'
   ]
 }
