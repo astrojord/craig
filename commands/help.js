@@ -14,7 +14,7 @@ module.exports = {
 			const e = new Discord.MessageEmbed()
 				.setColor(0xDC143C)
 				.setTimestamp()
-				.setFooter(`⚠ Some commands may require extra arguments. Use +help [name] to show full information.`) // do +command name to show extra info
+				.setFooter(`⚠ Some commands may require extra arguments. Use >help [name] to show full information.`) // do +command name to show extra info
 			message.channel.send(e);
 			return;
 		}
@@ -25,8 +25,8 @@ module.exports = {
 				.setTimestamp()
 				.addField(`**Information for \`youtube\`:**`, `Returns the top YouTube search result for a specified term/phrase.`)
 				.addField(`Aliases:`,`\`\`\`yt\`\`\``)
-				.addField(`Usage:`,`\`\`\`+youtube [search term]\`\`\``)
-				.addField(`Example:`,`\`\`\`+youtube test video please do not watch\`\`\``)
+				.addField(`Usage:`,`\`\`\`>youtube [search term]\`\`\``)
+				.addField(`Example:`,`\`\`\`>youtube test video please do not watch\`\`\``)
 			message.channel.send(e);
 			return;
 		}
@@ -36,8 +36,8 @@ module.exports = {
 				.setColor(0xDC143C)
 				.setTimestamp()
 				.addField(`**Information for \`remind\`:**`, `Sets a reminder for yourself -- the bot will ping you with your reminder after the specified time.`)
-				.addField(`Usage:`,`\`\`\`+remind [time] [unit s/m/h/d] [reminder message]\`\`\``)
-				.addField(`Example:`,`\`\`\`+remind 1 h text mom back\`\`\``)
+				.addField(`Usage:`,`\`\`\`>remind [time] [unit s/m/h/d] [reminder message]\`\`\``)
+				.addField(`Example:`,`\`\`\`>remind 1 h text mom back\`\`\``)
 			message.channel.send(e);
 			return;
 		}
